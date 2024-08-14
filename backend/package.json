@@ -5,7 +5,12 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm instal --prefix Frontend && npm build --prefix Frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/addysrii/stiffy-2.git"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
